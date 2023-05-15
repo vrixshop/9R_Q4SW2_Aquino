@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Time Converter (SW2)
+	</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style type="text/css">
+	
+.table{
+	border-radius: 4px;
+}
+
+.tablemain{
+	border-radius: 30px;
+}
+
+body{
+	background: url(https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+}
+hr{
+	background-color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container p-5 m-5">
+	<h1 style="color: white">
+		Time Converter
+	</h1>
+	<hr>
+	<table style="background: gray;" align="right">
+		<tr style="color: white">
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4SW2_Aquino.html" style="color: black">
+						Seconds
+					</a>
+					
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4SW2_AquinoM.html" style="color: black;">
+						Minutes
+					</a>
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4SW2_AquinoH.html" style="color: black;">
+						Hours
+					</a>
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-light btn-md disabled" style="color: black">
+						Days
+				</button>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+	<br><br>
+
+<table align="center" style="background-image: url(https://media.istockphoto.com/id/672325560/vector/landscape-night-sky.jpg?s=612x612&w=0&k=20&c=SZIDCIL4kzWehl3lyof74q9-YZYWpomWUIBZmtPFoCY=);" width="1000px" class="tablemain">
+	<tr align="center">
+		<td>
+	<h3 style="color: white">
+		<br><br>
+		Days to Seconds
+		<hr>
+	</h3>
+	<input type="number" id="seconds">
+	<button onclick="seconds();">
+		Convert
+	</button>
+		</td>
+		<td>
+			
+		</td>
+		<td colspan="2">
+	<h3 style="color: white">
+		<br><br>
+		Days to Minutes
+		<hr>
+	</h3>
+	<input type="number" id="minutes">
+	<button onclick="minutes();">
+		Convert
+	</button>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center">
+			<h3 align="center" style="color: white">
+				<br><br>
+				Days to Hours
+				<hr>
+			</h3>
+			<input type="number" id="hours">
+			<button onclick="hours();">
+				Convert
+			</button>
+			<br><br>
+			<br><br>
+		</td>
+	</tr>
+</table>
+</div>
+
+</body>
+<script type="text/javascript">
+	function seconds(){
+		let a = parseInt(document.getElementById("seconds").value);
+		alert(a*24*60*60*60);
+	}
+	function minutes(){
+		let a = parseInt(document.getElementById("minutes").value);
+		alert(a*24*60*60);
+	}
+	function hours(){
+		let a = parseInt(document.getElementById("hours").value);
+		alert(a*24);
+	}
+</script>
+</html>
